@@ -25,6 +25,9 @@ header {
     text-shadow:  1px 1px white;
     margin: 0;
 }
+#h1 div, #h2 div  {
+    display: inline-block;
+}
 
 .links ul li {
     display: inline;
