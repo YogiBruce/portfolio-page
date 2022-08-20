@@ -1,7 +1,6 @@
-* {
+body {
     color: rgb(10, 126, 126);
     text-shadow:  1px 1px white;
-    z-index: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 }
@@ -18,4 +17,15 @@
 
 ul {
     list-style-type: none;
+}
+footer {
+    position: fixed;
+    text-shadow: none;
+    font-size: 80%;
+    bottom: 0;
+    width: 100%;
+    height: 24px;
+    color: whitesmoke; 
+    background-color: rgb(10, 126, 126);
+    text-align: center;
 }
