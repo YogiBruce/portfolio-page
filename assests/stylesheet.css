@@ -1,7 +1,8 @@
 body {
+    display: flex;
     color: rgb(10, 126, 126);
-    text-shadow:  1px 1px white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    position: relative;
 
 }
 
@@ -12,11 +13,32 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+header {
+    display: block;
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: 40%;
+    text-align: right;
 
+}
+.header-text {
+    text-shadow:  1px 1px white;
+    margin: 0;
+}
 
-
-ul {
-    list-style-type: none;
+.links ul li {
+    display: inline;
+    margin-left: 15%;
+    opacity: 0.5;
+}
+.links ul li:hover {
+    opacity: 1.0;
+}
+content {
+    display: flex;
+}
+.buttons {
+    justify-content: left;
 }
 footer {
     position: fixed;
