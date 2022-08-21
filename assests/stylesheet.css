@@ -106,7 +106,7 @@ main {
     justify-content: left;
     margin-top: auto;
     overflow: visible;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -116,7 +116,4 @@ main {
 }
 .buttons a:hover {
     color: var(--smoke);
-}
-.buttona a:active {
-    color: var(--grape3);
 }
