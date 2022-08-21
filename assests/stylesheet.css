@@ -57,12 +57,12 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 450px){
     .links ul li {
         display: flex;
         padding: 7px;
     }
     
-    
+
 
 }
