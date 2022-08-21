@@ -110,6 +110,7 @@ main {
     font-weight: bold;
 }
 
+/* Properties for anchor buttons in main section*/
 .buttons a {
     text-decoration: none;
     color: var(--my-teal);
@@ -117,6 +118,8 @@ main {
 .buttons a:hover {
     color: var(--smoke);
 }
+
+/*Properties for buttons showing fields*/
 .local-button {
     padding: 0;
     text-indent: 0;
@@ -141,7 +144,7 @@ main {
 .local-button div {
     display: none;
 }
-.local-button:hover div{
+.local-button:hover  div{
     display: block;
     justify-content: center;
     align-items: top;
@@ -153,16 +156,17 @@ main {
     background-color: var(--smoke);font-size: 1.0rem;
     font-weight: bold;
 }
-#coming-soon {
+#services {
     background: url(images/Swerved.jpeg);
     font-size: 2rem;
     color: var(--smoke);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 .local-button:hover content{
     white-space: nowrap;
 }
+
 #contact-me a:hover {
     color: var(--grape3);
 }
