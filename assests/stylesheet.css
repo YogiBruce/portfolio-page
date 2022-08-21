@@ -23,7 +23,7 @@ body {
     color: var(--my-teal);
 }
 
-/*Header properties*/
+/*Header and link properties*/
 h1, h2, h3, h4 {
     margin-bottom: .625rem;
     color: var(--my-teal);
@@ -84,11 +84,12 @@ footer {
     list-style: none;
     margin-right: 2px;
     margin-left: 15%;
-    opacity: 0.5;
     position: relative;
+    opacity: .5;
+    color: var(--grape7);
 }
 .links ul li:hover {
-    opacity: 1.0;
+    opacity: 1;
 }
 
 /*Full display is a flexbox to fill screen*/
@@ -105,6 +106,17 @@ main {
     justify-content: left;
     margin-top: auto;
     overflow: visible;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: var(--my-teal);
+}
+.buttons a:hover {
+    color: var(--smoke);
+}
+.buttona a:active {
+    color: var(--grape3);
 }
