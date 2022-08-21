@@ -30,9 +30,11 @@ header {
 }
 
 .links ul li {
-    display: inline;
+    display: inline-block;
+    list-style: none;
     margin-left: 15%;
     opacity: 0.5;
+    position: relative;
 }
 .links ul li:hover {
     opacity: 1.0;
@@ -53,4 +55,14 @@ footer {
     color: whitesmoke; 
     background-color: rgb(10, 126, 126);
     text-align: center;
+}
+
+@media only screen and (max-width: 450px){
+    .links ul li {
+        display: flex;
+        padding: 7px;
+    }
+    
+    
+
 }
