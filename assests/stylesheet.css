@@ -56,13 +56,3 @@ footer {
     background-color: rgb(10, 126, 126);
     text-align: center;
 }
-
-@media only screen and (max-width: 450px){
-    .links ul li {
-        display: flex;
-        padding: 7px;
-    }
-    
-
-
-}
