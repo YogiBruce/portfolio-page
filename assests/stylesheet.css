@@ -105,5 +105,6 @@ main {
     justify-content: left;
     margin-top: auto;
     overflow: visible;
+    font-size: 1.2rem;
     font-weight: bold;
 }
