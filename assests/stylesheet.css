@@ -118,13 +118,13 @@ main {
     color: var(--smoke);
 }
 .buttons button {
+    float: left;
     background-color:transparent;
     background-repeat: no-repeat;
     -webkit-appeance: none;
     color: var(--my-teal);
     font-family: inherit;
     font-size: 1.8rem;
-    margin-left: -6px;
     font-weight: bold;
     border: none;
     cursor: pointer;
