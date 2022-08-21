@@ -120,6 +120,7 @@ main {
 .buttons button {
     background-color:transparent;
     background-repeat: no-repeat;
+    -webkit-appeance: none;
     color: var(--my-teal);
     font-family: inherit;
     font-size: 1.8rem;
