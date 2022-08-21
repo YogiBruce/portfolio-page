@@ -13,9 +13,14 @@
     text-shadow: 1px 0px var(--grape3);
 }
 
-/*Standard font size 10 10px*/
+/*Standard font size 10px and font family*/
 html {
     font-size: 62.5%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--my-teal);
 }
 
 /*Header properties*/
@@ -25,21 +30,16 @@ h1, h2, h3, h4 {
     font-weight: 700;
     line-height: 1.1;
 }
+
 h1 {
     font-size: 4vw;
 }
+
 h2 {
-    font-size: 2.3vw;
-}
-/**/
-body {
-    display: flex;
-    color: var(--my-teal);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    position: relative;
-
+    font-size: 2.2vw;
 }
 
+/*Set fixed scalable background */
 .background {
     background-image: url("images/background1.jpg");
     background-repeat: no-repeat;
@@ -47,25 +47,42 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+/*Header in a block centered-left*/
 header {
     display: block;
     margin-top: 30%;
     margin-left: auto;
-    margin-right: 40%;
+    margin-right: 50%;
     text-align: right;
+    line-height: 0px;
 
 }
 .header-text {
     text-shadow:  1px 1px var(--smoke);
     margin: 0;
 }
-#h1 div, #h2 div  {
-    display: inline-block;
+main {
+    width: 96%;
+    color: var(--my-teal);
+
+}
+footer {
+    position: fixed;
+    text-shadow: none;
+    font-size: 80%;
+    bottom: 0;
+    width: 100%;
+    height: 24px;
+    color: var(--smoke); 
+    background-color: var(--my-teal);
+    text-align: center;
 }
 
+/*Properties for nav links within header*/
 .links ul li {
     display: inline-block;
     list-style: none;
+    margin-right: 2px;
     margin-left: 15%;
     opacity: 0.5;
     position: relative;
@@ -78,15 +95,4 @@ content {
 }
 .buttons {
     justify-content: left;
-}
-footer {
-    position: fixed;
-    text-shadow: none;
-    font-size: 80%;
-    bottom: 0;
-    width: 100%;
-    height: 24px;
-    color: var(--smoke); 
-    background-color: var(--my-teal);
-    text-align: center;
 }
