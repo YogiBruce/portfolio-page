@@ -132,25 +132,37 @@ main {
     overflow: hidden;
     outline: none
 }
+
 .local-button:hover {
     color: var(--smoke);
     display: block;
     display: flex;
 }
+.local-button div {
+    display: none;
+}
 .local-button:hover div{
     display: block;
     justify-content: center;
     align-items: top;
-    margin-left: 5%;
+    margin-left: 20%;
     width: 50%;
-    border: 3px solid var(--smoke);
+    border: 3px solid var(--my-teal);
     border-radius: 2px;
+    color: var(--my-teal);
+    background-color: var(--smoke);font-size: 1.0rem;
+    font-weight: bold;
+}
+#coming-soon {
+    background: url(images/Swerved.jpeg);
+    font-size: 2rem;
     color: var(--smoke);
-    font-size: 1.2rem;
-    background-color: var(--my-teal);
-
-
-} 
-.local-button div {
-    display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.local-button:hover content{
+    white-space: nowrap;
+}
+#contact-me a:hover {
+    color: var(--grape3);
 }
