@@ -1,6 +1,40 @@
+/*Color scheme*/
+:root {
+    --my-teal: rgba(10, 126, 126, 1);
+    --smoke: whitesmoke;
+    --grape3: #e599f7;
+    --grape7: #ae3ec9;
+}
+
+/*Highlight color*/
+::selection {
+    background-color: var(--smoke);
+    color: var(--my-teal);
+    text-shadow: 1px 0px var(--grape3);
+}
+
+/*Standard font size 10 10px*/
+html {
+    font-size: 62.5%;
+}
+
+/*Header properties*/
+h1, h2, h3, h4 {
+    margin-bottom: .625rem;
+    color: var(--my-teal);
+    font-weight: 700;
+    line-height: 1.1;
+}
+h1 {
+    font-size: 4vw;
+}
+h2 {
+    font-size: 2.3vw;
+}
+/**/
 body {
     display: flex;
-    color: rgb(10, 126, 126);
+    color: var(--my-teal);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     position: relative;
 
@@ -22,7 +56,7 @@ header {
 
 }
 .header-text {
-    text-shadow:  1px 1px white;
+    text-shadow:  1px 1px var(--smoke);
     margin: 0;
 }
 #h1 div, #h2 div  {
@@ -52,7 +86,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 24px;
-    color: whitesmoke; 
-    background-color: rgb(10, 126, 126);
+    color: var(--smoke); 
+    background-color: var(--my-teal);
     text-align: center;
 }
