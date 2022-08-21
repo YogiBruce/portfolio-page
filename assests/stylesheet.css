@@ -118,7 +118,8 @@ main {
     color: var(--smoke);
 }
 .buttons button {
-    float: left;
+    padding: 0;
+    text-indent: 0;
     background-color:transparent;
     background-repeat: no-repeat;
     -webkit-appeance: none;
