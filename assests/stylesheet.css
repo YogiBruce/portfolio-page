@@ -90,9 +90,20 @@ footer {
 .links ul li:hover {
     opacity: 1.0;
 }
-content {
+
+/*Full display is a flexbox to fill screen*/
+main {
     display: flex;
+    flex-grow: 1;
+
 }
+
+/*Content buttons are fixed location to bottom left of window*/
 .buttons {
+    position: fixed;
+    bottom: 3.0rem;
     justify-content: left;
+    margin-top: auto;
+    overflow: visible;
+    font-weight: bold;
 }
