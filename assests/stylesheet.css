@@ -179,3 +179,10 @@ main {
 #contact-me a:hover {
     color: var(--grape3);
 }
+
+@media screen and (max-width: 370px) {
+    .links ul li {
+        justify-content: left;
+        margin-left: auto;
+    }
+}
