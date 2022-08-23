@@ -107,7 +107,7 @@ main {
     justify-content: left;
     margin-top: auto;
     overflow: visible;
-    font-size: 4vh;
+    font-size: 3vw;
     font-weight: bold;
 }
 
@@ -129,7 +129,7 @@ main {
     -webkit-appeance: none;
     color: var(--my-teal);
     font-family: inherit;
-    font-size: 4vh;
+    font-size: 3vw;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -163,6 +163,8 @@ main {
     overflow: auto;
     white-space: pre-wrap;
     word-spacing: 1vw;
+    font-size: 1.1rem;
+    margin:2px;
 
 }
 #services {
