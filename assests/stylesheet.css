@@ -107,7 +107,7 @@ main {
     justify-content: left;
     margin-top: auto;
     overflow: visible;
-    font-size: 4vw;
+    font-size: 4vh;
     font-weight: bold;
 }
 
@@ -129,7 +129,7 @@ main {
     -webkit-appeance: none;
     color: var(--my-teal);
     font-family: inherit;
-    font-size: 4vw;
+    font-size: 4vh;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -155,7 +155,7 @@ main {
     border-radius: 2px;
     color: var(--my-teal);
     background-color: var(--smoke);
-    font-size: 2vw;
+    font-size: 2vh;
     font-weight: bold;
 }
 #aboutMe {
@@ -169,7 +169,7 @@ main {
     height: 20vh;
     width: 50vw;
     background: url(images/Swerved.jpeg);
-    font-size: 5vw;
+    font-size: 5vh;
     color: var(--smoke);
     background-repeat: no-repeat;
     background-position: bottom;
