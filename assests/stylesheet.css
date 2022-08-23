@@ -120,7 +120,7 @@ main {
 }
 
 /*Properties for buttons showing fields*/
-.local-button {
+.localButton {
     padding: 0;
     text-indent: 0;
     background-color:transparent;
@@ -136,35 +136,40 @@ main {
     outline: none
 }
 
-.local-button:hover {
+.localButton:hover {
     color: var(--smoke);
     display: block;
     display: flex;
+    whitespace: nowrap;
 }
-.local-button div {
+.localButton div {
     display: none;
 }
-.local-button:hover  div{
+.localButton:hover  div{
     display: block;
     justify-content: center;
     align-items: top;
-    margin-left: 20%;
-    width: 50%;
+    margin-left: 15vw;
     border: 3px solid var(--my-teal);
     border-radius: 2px;
     color: var(--my-teal);
     background-color: var(--smoke);font-size: 1.0rem;
     font-weight: bold;
 }
+#aboutMe {
+    width: 30vw;
+    overflow: auto;
+
+}
 #services {
+    height: 20vh;
+    width: 50vw;
     background: url(images/Swerved.jpeg);
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--smoke);
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: 100%;
-}
-.local-button:hover content{
-    white-space: nowrap;
 }
 
 #contact-me a:hover {
