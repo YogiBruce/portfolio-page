@@ -49,6 +49,7 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+
 /*Header in a block centered-left*/
 header {
     display: block;
@@ -57,12 +58,13 @@ header {
     margin-right: 50vw;
     text-align: right;
     line-height: 0px;
-
 }
+
 .header-text {
     text-shadow:  1px 1px var(--smoke);
     margin: 0;
 }
+
 /*Sets standard features for main*/
 main {
     display: flex;
@@ -72,8 +74,8 @@ main {
     color: var(--my-teal);
     height: 60vh;
     margin-top: auto;
-
 }
+
 /*Footer properties*/
 footer {
     position: fixed;
@@ -98,6 +100,7 @@ footer {
     color: var(--grape7);
     flex-wrap: nowrap;
 }
+
 .links ul li:hover {
     opacity: 1;
 }
@@ -125,6 +128,7 @@ main {
     text-decoration: none;
     color: var(--my-teal);
 }
+
 .buttons a:hover {
     color: var(--smoke);
 }
@@ -147,6 +151,7 @@ main {
     outline: none;
     white-space: nowrap;
 }
+
  /*Highlights buttons but keeps them from moving to open field */
 .localButton:focus {
     color: var(--smoke);
@@ -159,6 +164,7 @@ main {
 .localButton div {
     display: none;
 }
+
 /*Displays content divs when buttons are clicked */
 .localButton:focus  div{
     display: block;
@@ -169,7 +175,6 @@ main {
     border-radius: 2px;
     color: var(--my-teal);
     background-color: var(--smoke);
-    
 }
 
 /*Brings aboutMe section forward in z-index and spaces properly*/
