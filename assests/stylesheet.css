@@ -104,12 +104,6 @@ footer {
 .links ul li:hover {
     opacity: 1;
 }
-/*Full display is a flexbox to fill screen*/
-main {
-    display: flex;
-    flex-grow: 1;
- 
-}
  
 /*Content buttons are fixed location to bottom left of window*/
 .buttons {
@@ -153,7 +147,7 @@ main {
 }
 
  /*Highlights buttons but keeps them from moving to open field */
-.localButton:focus {
+.localButton:hover {
     color: var(--smoke);
     display: flex;
     font-size: 3.4vw;
@@ -166,7 +160,7 @@ main {
 }
 
 /*Displays content divs when buttons are clicked */
-.localButton:focus  div{
+.localButton:hover  div{
     display: block;
     justify-content: center;
     align-items: top;
