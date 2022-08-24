@@ -234,6 +234,11 @@ footer {
         position:unset;
     }
 }
+@media screen and (max-width: 500px) {
+    #services{
+        font-size: 8vw;
+    }
+}
 
 @media screen and (max-height: 600px){
     .buttons, .buttons button {
