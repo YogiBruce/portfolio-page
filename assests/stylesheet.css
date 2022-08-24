@@ -182,6 +182,7 @@ main {
     z-index: 2;
     position:center;
     width: auto;
+    max-width: 600px;
     height: auto;
     overflow: auto;
     white-space: pre-wrap;
@@ -240,7 +241,7 @@ main {
     }
 }
 
-@media screen and (max-height: 400px){
+@media screen and (max-height: 600px){
     .buttons, .buttons button {
         font-size: 1.2rem;
     }
