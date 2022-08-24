@@ -46,6 +46,8 @@ h2 {
     background-position: top center;
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 /*Header in a block centered-left*/
 header {
@@ -61,11 +63,18 @@ header {
     text-shadow:  1px 1px var(--smoke);
     margin: 0;
 }
+/*Sets standard features for main*/
 main {
+    display: flex;
+    flex-direction: row;
+    justify-items: normal;
     width: 96%;
     color: var(--my-teal);
+    height: 60vh;
+    margin-top: auto;
 
 }
+/*Footer properties*/
 footer {
     position: fixed;
     font-size: 1.2rem;
@@ -92,16 +101,16 @@ footer {
 .links ul li:hover {
     opacity: 1;
 }
-
 /*Full display is a flexbox to fill screen*/
 main {
     display: flex;
     flex-grow: 1;
-
+ 
 }
-
+ 
 /*Content buttons are fixed location to bottom left of window*/
 .buttons {
+    z-index: 1;
     position: fixed;
     bottom: 3.0rem;
     justify-content: left;
@@ -110,7 +119,7 @@ main {
     font-size: 3vw;
     font-weight: bold;
 }
-
+ 
 /* Properties for anchor buttons in main section*/
 .buttons a {
     text-decoration: none;
@@ -119,9 +128,10 @@ main {
 .buttons a:hover {
     color: var(--smoke);
 }
-
+ 
 /*Properties for buttons showing fields*/
 .localButton {
+    z-index: 1;
     padding: 0;
     text-indent: 0;
     background-color:transparent;
@@ -134,19 +144,23 @@ main {
     border: none;
     cursor: pointer;
     overflow: hidden;
-    outline: none
+    outline: none;
+    white-space: nowrap;
+}
+ /*Highlights buttons but keeps them from moving to open field */
+.localButton:focus {
+    color: var(--smoke);
+    display: flex;
+    font-size: 3.4vw;
+    font-weight: bold;
 }
 
-.localButton:hover {
-    color: var(--smoke);
-    display: block;
-    display: flex;
-    whitespace: nowrap;
-}
+/*Hides fields when buttons not in use*/
 .localButton div {
     display: none;
 }
-.localButton:hover  div{
+/*Displays content divs when buttons are clicked */
+.localButton:focus  div{
     display: block;
     justify-content: center;
     align-items: top;
@@ -155,36 +169,77 @@ main {
     border-radius: 2px;
     color: var(--my-teal);
     background-color: var(--smoke);
-    font-size: 2vh;
-    font-weight: bold;
+    
 }
+
+/*Brings aboutMe section forward in z-index and spaces properly*/
 #aboutMe {
-    width: 30vw;
+    z-index: 2;
+    position:center;
+    width: auto;
+    height: auto;
     overflow: auto;
     white-space: pre-wrap;
     word-spacing: 1vw;
-    font-size: 1.1rem;
-    margin:2px;
-
+    font-size: 1.5vh;
+    position: center;
+    margin-right:18%;
 }
+
+/*Formats Services section to maintain photo aspect ratio*/
 #services {
-    height: 20vh;
-    width: 50vw;
+    z-index: 2;
+    position: center;
     background: url(images/Swerved.jpeg);
     font-size: 5vh;
     color: var(--smoke);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+    width: 60vw;
+    max-width: 700px;
+    height: 52.5vh;
+    margin-top: 20vh;
+    margin-left: 15vw;
+}
+ 
+/*Brings contact me up in z-layer and off bottom of page*/
+#contactMe {
+    z-index: 2;
+    position: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
 }
 
-#contact-me a:hover {
+/*Sets hover color for mailTo: anchor tag in contact form*/
+#contactMe a:hover {
     color: var(--grape3);
 }
 
+/*Media query's to prevent over-sizing of text and icon-overlap*/
+
 @media screen and (max-width: 370px) {
-    .links ul li {
-        justify-content: left;
+    .links{
         margin-left: auto;
+        margin-right: auto;
+    }
+    .links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .links ul li {
+        display: inline-block;
+        list-style: none;
+        position:unset;
+    }
+}
+
+@media screen and (max-height: 400px){
+    .buttons, .buttons button {
+        font-size: 1.2rem;
+    }
+    #aboutMe{
+        font-size: 1.1rem;
     }
 }
