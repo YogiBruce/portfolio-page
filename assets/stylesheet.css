@@ -187,7 +187,7 @@ footer {
 }
 
 /*Formats Services section to maintain photo aspect ratio*/
-#services {
+#projects {
     z-index: 2;
     position: center;
     background: url(images/Swerved.jpeg);
