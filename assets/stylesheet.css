@@ -184,7 +184,7 @@ footer {
     margin-right:18%;
 }
 
-/*Formats Projects section to maintain photo aspect ratio*/
+/*Formats Projects section to maintain photo aspect ratio and display cards with good visual spacing*/
 
 #projects:hover div{
     position: center;
@@ -206,17 +206,19 @@ footer {
 #projects:hover div .projectCard{
     background-color: var(--smoke);
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: var(--my-teal);
     border-radius: 5px;
     color: var(--my-teal); 
+    font-size: 1.4rem;
+    justify-content: center;
     margin: 0.8rem;
     flex: 1 0 100px;
 }
 
-.localButtons #projects:hover header{
-    padding: 5px;
+#projects:hover header{
     font-size: 1.4rem;
+    
 }
 
 /*Brings contact me up in z-layer and off bottom of page*/
