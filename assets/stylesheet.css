@@ -212,9 +212,26 @@ footer {
     width: 28%;
     height: 28%;
 }
+#horiseon{
+    background: url(images/digitalMarketingMeeting.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    justify-content: center;
+    flex: 0 0 36%;
+    flex-wrap: wrap;
 
-#projects:hover header{
-    font-size: 1.4rem; 
+}
+#horiseon h1{
+    color: var(--smoke);
+    text-shadow: 1px 1px var(--my-teal);
+}
+
+#projects:hover .projectCard h1{
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-top: 40%;
+
 }
 
 /*Brings contact me up in z-layer and off bottom of page*/
@@ -245,6 +262,15 @@ footer {
         display: inline-block;
         list-style: none;
         position:unset;
+    }
+    #projects:hover .projectCard{
+        width: 40%;
+        height: 20%;
+    }
+}
+@media screen and (max-width: 600px){
+    #projects:hover .projectCard h1{
+        font-size: .8rem;
     }
 }
 
