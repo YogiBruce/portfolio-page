@@ -215,7 +215,7 @@ footer {
 #horiseon{
     background: url(images/digitalMarketingMeeting.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     justify-content: center;
     flex: 0 0 36%;
@@ -229,8 +229,8 @@ footer {
 
 #projects:hover .projectCard h1{
     display: inline-block;
-    font-size: 1.4rem;
-    margin-top: 40%;
+    font-size: 2vh;
+    margin-top: center;
 
 }
 
