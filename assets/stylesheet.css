@@ -107,7 +107,6 @@ footer {
  
 /*Content buttons are fixed location to bottom left of window*/
 .buttons {
-    z-index: 1;
     position: fixed;
     bottom: 3.0rem;
     justify-content: left;
@@ -129,7 +128,6 @@ footer {
  
 /*Properties for buttons showing fields*/
 .localButton {
-    z-index: 1;
     padding: 0;
     text-indent: 0;
     background-color:transparent;
@@ -155,12 +153,13 @@ footer {
 }
 
 /*Hides fields when buttons not in use*/
-.localButton div {
+
+.localButton .projectCard, .localButton #projects, .localButton div{
     display: none;
 }
 
 /*Displays content divs when buttons are clicked */
-.localButton:hover  div{
+.localButton:hover div, .localButton:hover .projectCard {
     display: block;
     justify-content: center;
     align-items: top;
@@ -172,8 +171,7 @@ footer {
 }
 
 /*Brings aboutMe section forward in z-index and spaces properly*/
-#aboutMe {
-    z-index: 2;
+#aboutMeCard:hover #aboutMe {
     position:center;
     width: auto;
     max-width: 600px;
@@ -186,13 +184,11 @@ footer {
     margin-right:18%;
 }
 
-/*Formats Services section to maintain photo aspect ratio*/
-#projects {
-    z-index: 2;
+/*Formats Projects section to maintain photo aspect ratio*/
+
+#projects:hover div{
     position: center;
     background: url(images/Swerved.jpeg);
-    font-size: 5vh;
-    color: var(--smoke);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -201,11 +197,30 @@ footer {
     height: 52.5vh;
     margin-top: 20vh;
     margin-left: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
 }
- 
+
+#projects:hover div .projectCard{
+    background-color: var(--smoke);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--my-teal);
+    border-radius: 5px;
+    color: var(--my-teal); 
+    margin: 0.8rem;
+    flex: 1 0 100px;
+}
+
+.localButtons #projects:hover header{
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
 /*Brings contact me up in z-layer and off bottom of page*/
 #contactMe {
-    z-index: 2;
     position: center;
     font-size: 1.8rem;
     margin-bottom: 30px;
@@ -232,11 +247,6 @@ footer {
         display: inline-block;
         list-style: none;
         position:unset;
-    }
-}
-@media screen and (max-width: 500px) {
-    #projects {
-        font-size: 8vw;
     }
 }
 
