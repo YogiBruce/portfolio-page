@@ -225,6 +225,7 @@ footer {
 #horiseon h1{
     color: var(--smoke);
     text-shadow: 1px 1px var(--my-teal);
+    margin-top: center;
 }
 
 #projects:hover .projectCard h1{
