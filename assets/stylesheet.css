@@ -246,7 +246,9 @@ footer {
     font-size: auto;
     margin-bottom: 15%;
 
-}#passwordGenerator {
+}
+
+#passwordGenerator {
     background: url(images/passwordGenerator.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -263,6 +265,26 @@ footer {
     font-size: auto;
     margin-bottom: 15%;
 }
+
+#starsAlign {
+    background: url(images/StarsAlign.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    justify-content: center;
+    flex: 0 0 33%;
+    flex-wrap: wrap;
+
+}
+#starsAlign h1{
+    display: inline-block;
+    color: var(--smoke);
+    text-shadow: 1px 1px var(--my-teal);
+    font-size: auto;
+    margin-bottom: 15%;
+}
+
+
 
 #projects:hover .projectCard h1{
     display: inline-block;
